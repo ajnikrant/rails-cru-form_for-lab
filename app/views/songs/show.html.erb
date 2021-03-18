@@ -1,0 +1,8 @@
+<h1>this is the song show page</h1>
+<br>
+<h2> song title: <%=@song.name %></h2> <br>
+<h2> artist: <%= @song.artist.name %></h2> <br>
+<h2> genre: <%= @song.genre.name %></h2> <br>
+<br>
+
+<%= link_to "back to list of songs", songs_path%>

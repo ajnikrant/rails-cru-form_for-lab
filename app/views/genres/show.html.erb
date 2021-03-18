@@ -1,0 +1,10 @@
+<h1>this is the genre show page</h1>
+<br>
+<h2>Genre: <%= @genre.name %></h2> <br>
+
+<h3> Artists who play this genre: </h3><% @genre.artists.each do |artist| %>
+    <%= artist.name%><br>
+    <%end%>
+<br>
+
+<%= link_to "back to the genres list", genres_path%>
